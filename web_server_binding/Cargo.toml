@@ -1,0 +1,20 @@
+[package]
+name = "web_server_binding"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+description = "TCP and Unix-socket binding helpers and readiness polling for web servers."
+repository = "https://github.com/intentee/web-server-binding"
+keywords = ["web-server", "tcp", "unix-socket", "tokio"]
+categories = ["network-programming", "asynchronous"]
+
+[dependencies]
+anyhow = "1.0"
+tokio = { version = "1.45", features = ["full", "time"] }
+
+[dev-dependencies]
+tempfile = "3.21"
+tokio = { version = "1.45", features = ["full", "time", "test-util"] }
+
+[lints]
+workspace = true

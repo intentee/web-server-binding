@@ -1,0 +1,7 @@
+[workspace]
+members = ["web_server_binding"]
+resolver = "3"
+
+[workspace.lints.clippy]
+ignored_unit_patterns = "warn"
+must_use_candidate = "warn"
